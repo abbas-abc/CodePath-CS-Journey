@@ -8,8 +8,8 @@ from zero to advanced, one level at a time.
 | Level | Topic | Status |
 |-------|-------|--------|
 | 0 | Setup and First Program | Completed |
-| 1 | Input/Output, Variables, Operators | Not started |
-| 2 | Conditionals | Not started |
+| 1 | Input/Output, Variables, Operators | Completed |
+| 2 | Conditionals | In progress |
 | 3 | Loops | Not started |
 | 4 | Functions | Not started |
 | 5 | Arrays and Strings | Not started |
