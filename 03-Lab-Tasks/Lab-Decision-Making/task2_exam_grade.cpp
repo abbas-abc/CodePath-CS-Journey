@@ -29,5 +29,3 @@ int main(){
 }
 
 
-//     A = 90–100, B = 75–89, C = 60–74, D = 50–59, F = below 50.
-// Requirements: Use an else-if ladder. If marks are below 0 or above 100, display “Invalid marks”.
