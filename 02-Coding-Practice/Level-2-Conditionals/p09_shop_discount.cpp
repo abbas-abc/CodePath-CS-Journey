@@ -1,39 +1,42 @@
 #include <iostream>
 using namespace std;
 int main(){
-    double price,total_bill,discount,after_discount;
-    int quantity,stock;
+    double price,discount,total,final_bill;
+    int quantity,stock,discountpercent;
 
-    cout<<"Price: ";
-    cin>>price;
-
-    cout<<"Quantity: ";
-    cin>>quantity;
-
-    cout<<"Stock: ";
-    cin>>stock;
+    cout << "===== Electronics Shop =====" << endl;
     
-    total_bill=price*quantity;
-    
-    discount= total_bill*10/100;
+    cout << "Price: ";
+    cin >> price;
+    cout << "Quantity: ";
+    cin >> quantity;
+    cout << "Stock: ";
+    cin >> stock;
 
-    after_discount=total_bill-discount;
-
-    
     if(price<=0 || quantity<=0 || stock<0){
         cout<<"Invalid input"<<endl;
     }
     else if(quantity>stock){
         cout<<"Not enough stock"<<endl;
     }
-    else if(total_bill>1000){
-        cout<<"Total bill: "<<total_bill<<endl;
-        cout<<"Discount: "<<total_bill-after_discount<<endl;
-        cout<<"Discounted bill: "<<after_discount<<endl;
-    }
     else{
-        cout<<"Total bill: "<<total_bill<<endl;
-        
+        total = price*quantity;
+
+        if(total>=10000){            
+            discountpercent=15;
+        }
+        else if(total>=5000){
+            discountpercent=10;
+        }
+        else{
+            discountpercent=0;
+        }
+        discount = total * discountpercent/100;   
+        final_bill = total-discount;
+
+        cout<< "Total Bill: " << total << endl;
+        cout<< "Discount (" << discountpercent << "%): " << discount << endl;   
+        cout<< "Final Bill: " << final_bill << endl;
     }   
     return 0;
 }
