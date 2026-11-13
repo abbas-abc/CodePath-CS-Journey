@@ -67,7 +67,7 @@ switch (choice) {
 - Matching the task wording exactly
 
 ## Questions I still have
-- (write your own here)
+- What is the purpose of default in a switch statement?
 
 ## Programs
 - `02-Coding-Practice/Level-2-Conditionals/` (p01 to p11)
