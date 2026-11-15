@@ -17,38 +17,37 @@
 | `task6_login_verification.cpp` | nested if |
 | `challenge_water_tank.cpp` | else-if ladder with `&&`, conversion |
 
-## Test results
 | Task | Input | Expected | My output |
 |------|-------|----------|-----------|
-| 1 | 8 | Positive | |
-| 1 | -4 | Negative | |
-| 1 | 0 | Zero | |
-| 2 | 92 | Grade A | |
-| 2 | 76 | Grade B | |
-| 2 | 63 | Grade C | |
-| 2 | 54 | Grade D | |
-| 2 | 42 | Grade F | |
-| 2 | 105 | Invalid marks | |
-| 3 | -2 | Warning | |
-| 3 | 10 | Normal | |
-| 3 | 32.5 | Normal | |
-| 3 | 46 | Warning | |
-| 4 | -5 | Invalid units | |
-| 4 | 80 | Low | |
-| 4 | 250 | Medium | |
-| 4 | 420 | High | |
-| 4 | 650 | Very High | |
-| 5 | 85 82 | Scholarship approved | |
-| 5 | 85 60 | Attendance too low | |
-| 5 | 70 90 | Marks too low | |
-| 5 | 85 -10 | Invalid | |
-| 6 | 1234 2468 | Login successful | |
-| 6 | 1234 1111 | Incorrect PIN | |
-| 6 | 5555 2468 | User ID not found | |
-| Challenge | -1 | Invalid number | |
-| Challenge | 0.4 | Low level | |
-| Challenge | 1.8 | Level safe | |
-| Challenge | 1.9 | Overflow risk | |
+| 1 | 8 | Positive | Positive |
+| 1 | -4 | Negative | Negative |
+| 1 | 0 | Zero | Zero |
+| 2 | 92 | Grade A | Grade A |
+| 2 | 76 | Grade B | Grade B |
+| 2 | 63 | Grade C | Grade C |
+| 2 | 54 | Grade D | Grade D |
+| 2 | 42 | Grade F | Grade F |
+| 2 | 105 | Invalid marks | Invalid marks |
+| 3 | -2 | Warning | Warning |
+| 3 | 10 | Normal | Normal |
+| 3 | 32.5 | Normal | Normal |
+| 3 | 46 | Warning | Warning |
+| 4 | -5 | Invalid units | Invalid units |
+| 4 | 80 | Low | Low |
+| 4 | 250 | Medium | Medium |
+| 4 | 420 | High | High |
+| 4 | 650 | Very High | Very High |
+| 5 | 85 82 | Scholarship approved | Scholarship approved |
+| 5 | 85 60 | Attendance too low | Attendance too low |
+| 5 | 70 90 | Marks too low | Marks too low |
+| 5 | 85 -10 | Invalid | Invalid |
+| 6 | 1234 2468 | Login successful | Login successful |
+| 6 | 1234 1111 | Incorrect PIN | Incorrect PIN |
+| 6 | 5555 2468 | User ID not found | User ID not found |
+| Challenge | -1 | Invalid number | Invalid number |
+| Challenge | 0.4 | Low level | Low level |
+| Challenge | 1.8 | Level safe | Level safe |
+| Challenge | 1.9 | Overflow risk | Overflow risk |
 
 ## What I learned
 Write 3 or 4 sentences in your own words. Ideas from the real mistakes: the lower limit of a range
