@@ -3,20 +3,19 @@
 ## Part A: Warm-up
 
 ### 1. if or switch?
-Rule from the lab sheet: use `switch` for **exact values**, and `if` for **ranges and combined conditions**.
-
 | Problem | Structure | Reason |
 |---------|-----------|--------|
-| Temperature > 40 C | (hint: is it one exact value or a range?) | |
-| Menu choice is 1, 2, or 3 | (hint: exact values?) | |
-| Marks >= 50 AND attendance >= 75 | (hint: one condition, or two combined?) | |
-| Select one of four fixed services | (hint: exact values?) | |
+| Temperature > 40 C | if | It is a range, and switch cannot test ranges |
+| Menu choice is 1, 2, or 3 | switch | Exact fixed values, one case for each |
+| Marks >= 50 AND attendance >= 75 | if | A combined condition using && |
+| Select one of four fixed services | switch | One exact choice from a fixed list |
 
-### 2. What happens if `break` is omitted after a case?
-(Hint: where does execution continue, and what is that behavior called?)
+### 2. What happens if break is omitted after a case?
+Execution continues into the next case and runs its statements too, until a break or the end of the
+switch. This is called fall-through.
 
-### 3. Is `default` compulsory? What is its purpose?
-(Hint: your p10 and p11 both used it for invalid input. Is the program still valid without it?)
+### 3. Is default compulsory? What is its purpose?
+No, it is optional. It handles any value that does not match a case, such as an invalid menu choice.
 
 ## Part C: Trace the output
 
@@ -32,9 +31,12 @@ switch (n)
     default: cout << "Other";
 }
 ```
-Note: the sheet printed the fourth case as `case4:cout<<"yellow";break;` with curly quotes. I read it as
-`case 4: cout << "yellow"; break;`.
+Note: the sheet printed the fourth case as `case4:cout<<"yellow";break;` with curly quotes. I read it as `case 4:`.
 
-**Output:** (hint: which case does it start at? Which lines have a `break`? Where does it stop?)
+**Output:** Green Blue yellow
 
-**Explanation:** (one or two sentences using the word "fall-through")
+**Explanation:** n is 2, so execution starts at case 2 and prints "Green ". Case 2 and case 3 have no break, so
+it falls through and prints "Blue " and then "yellow". The break after "yellow" stops the switch, so default
+never runs.
+
+I ran this on my computer and the output matched.
