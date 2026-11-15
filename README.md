@@ -9,8 +9,8 @@ from zero to advanced, one level at a time.
 |-------|-------|--------|
 | 0 | Setup and First Program | Completed |
 | 1 | Input/Output, Variables, Operators | Completed |
-| 2 | Conditionals | In progress |
-| 3 | Loops | Not started |
+| 2 | Conditionals | Completed |
+| 3 | Loops | In progress |
 | 4 | Functions | Not started |
 | 5 | Arrays and Strings | Not started |
 | 6 | Pointers | Not started |
